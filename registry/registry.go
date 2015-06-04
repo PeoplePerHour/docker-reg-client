@@ -10,13 +10,12 @@ import (
 )
 
 const (
-	defaultBaseURL = "https://index.docker.io/v1/"
+	defaultBaseURL = "https://registry-1.docker.io/v1/"
 )
 
 // Client manages communication with the Docker Registry API.
 type Client struct {
 	// BaseURL represents the base URL for the Registry API.
-	// Defaults to "https://index.docker.io/v1/".
 	BaseURL *url.URL
 
 	// Hub gives access to the Docker Hub API for retrieving auth tokens.
